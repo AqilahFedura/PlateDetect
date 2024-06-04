@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "366929136269",
+    "project_id": "car-info-5f4ba",
+    "storage_bucket": "car-info-5f4ba.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:366929136269:android:9fc9d5816a556ec8d330c4",
+        "android_client_info": {
+          "package_name": "com.abp.carinfo"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDq3ZdLHb-8F33l67Xao4CDjvCK5eBSATA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

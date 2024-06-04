@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">car info admin</string>
+    <string name="enter_owner_name">Enter Owner Name</string>
+    <string name="masukkan_nama_pemilik">Masukkan nama pemilik</string>
+</resources>
