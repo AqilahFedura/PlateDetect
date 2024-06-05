@@ -86,10 +86,12 @@
             android:layout_width="259dp"
             android:layout_height="145dp"
             android:layout_marginBottom="10dp"
-            android:scaleType="center"
+            android:scaleType="centerInside"
+            android:layout_gravity="center"
             android:src="@drawable/mobil1" />
 
         <TextView
+            android:id="@+id/readOwnerName"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginBottom="5dp"
@@ -97,36 +99,87 @@
             android:textColor="@color/green"
             android:textSize="18sp" />
 
-        <TextView
-            android:layout_width="wrap_content"
+        <TableLayout
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Tipe Kendaraan     : Kendaraan roda 4"
-            android:textColor="@color/green"
-            android:textSize="18sp" />
+            android:layout_marginBottom="5dp">
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Brand                      : Suzuki APV 2007/08"
-            android:textColor="@color/green"
-            android:textSize="18sp" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Nama Pemilik"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": Ridwan Akmal"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Nomor Kendaraan  : B 1826 CRF"
-            android:textColor="@color/green"
-            android:textSize="18sp" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Tipe Kendaraan"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": Kendaraan roda 4"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+            </TableRow>
 
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginBottom="5dp"
-            android:text="Wilayah                     : Kota Tangerang, Jakarta Barat"
-            android:textColor="@color/green"
-            android:textSize="18sp" />
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readVehicleBrand"
+                    android:text="Brand"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": Suzuki APV 2007/08"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/readVehicleRTO"
+                    android:text="Nomor Kendaraan"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": B 1826 CRF"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+            </TableRow>
+
+            <TableRow>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Wilayah"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text=": Kota Tangerang\n  Jakarta Barat"
+                    android:textSize="18sp"
+                    android:textColor="@color/green"/>
+            </TableRow>
+        </TableLayout>
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
