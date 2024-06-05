@@ -5,15 +5,128 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@drawable/user"
     tools:context=".MainActivity">
 
+    <!-- Title -->
+
+    <!-- Search Section -->
+
     <TextView
+        android:id="@+id/title"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="52dp"
+        android:gravity="center"
+        android:text="Info\nKendaraan"
+        android:textColor="@android:color/white"
+        android:textSize="40sp"
+        android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
+    <EditText
+        android:id="@+id/searchVehicleNumber"
+        android:layout_width="257dp"
+        android:layout_height="47dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="76dp"
+        android:layout_marginEnd="20dp"
+        android:background="@drawable/green_border"
+        android:gravity="center"
+        android:hint="B 1826 CRF"
+        android:padding="12dp"
+        android:textColor="@color/green"
+        android:textSize="20sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.035"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/title" />
+
+    <Button
+        android:id="@+id/search_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/green"
+        android:padding="12dp"
+        android:text="Search"
+        android:textColor="@android:color/white"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toBottomOf="@+id/searchVehicleNumber"
+        app:layout_constraintStart_toEndOf="@+id/searchVehicleNumber"
+        app:layout_constraintTop_toTopOf="@+id/searchVehicleNumber"
+        app:layout_constraintVertical_bias="0.488" />
+
+    <!-- Results Section -->
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="24dp"
+        android:background="@drawable/green_border"
+        android:orientation="vertical"
+        android:padding="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/searchVehicleNumber">
+
+        <!-- Vehicle Image -->
+
+        <!-- Result Text -->
+
+        <!-- Info -->
+
+        <ImageView
+            android:layout_width="259dp"
+            android:layout_height="145dp"
+            android:layout_marginBottom="10dp"
+            android:scaleType="center"
+            android:src="@drawable/mobil1" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Nama Pemilik        : Ridwan Akmal"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Tipe Kendaraan     : Kendaraan roda 4"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Brand                      : Suzuki APV 2007/08"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Nomor Kendaraan  : B 1826 CRF"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="5dp"
+            android:text="Wilayah                     : Kota Tangerang, Jakarta Barat"
+            android:textColor="@color/green"
+            android:textSize="18sp" />
+    </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
