@@ -5,16 +5,18 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:gravity="center"
+    android:orientation="vertical"
+    android:gravity="center_vertical"
     android:background="@drawable/vechinfo"
     tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
+        android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:gravity="center"
-        android:padding="30dp">
+        android:layout_marginTop="550dp"
+        android:layout_gravity="center_horizontal"
+        android:padding="20dp"/>
 
         <Button
             android:id="@+id/mainUpload"
@@ -31,20 +33,22 @@
             android:orientation="horizontal">
 
             <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
                 android:text="Update"
                 android:id="@+id/mainUpdate"
-                android:textSize="25sp"
-                android:layout_width="235dp"
-                android:layout_height="71dp"
-                app:strokeColor="@color/dark_blue"
-                app:strokeWidth="2dp"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_weight="1"
                 android:backgroundTint="@color/white"
                 android:textColor="@color/dark_blue"
+                app:strokeColor="@color/dark_blue"
+                app:strokeWidth="2dp"
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"/>
 
 
-    </LinearLayout>
+        </LinearLayout>
 
 </LinearLayout>
 
