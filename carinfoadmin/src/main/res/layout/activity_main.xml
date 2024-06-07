@@ -47,6 +47,22 @@
                 android:layout_marginTop="20dp"
                 android:layout_marginStart="10dp"/>
 
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="0dp"
+                android:layout_height="70dp"
+                android:text="Delete"
+                android:id="@+id/mainDelete"
+                android:textSize="18sp"
+                android:padding="16dp"
+                android:layout_weight="1"
+                android:backgroundTint="@color/white"
+                android:textColor="@color/dark_blue"
+                app:strokeColor="@color/dark_blue"
+                app:strokeWidth="2dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginEnd="10dp"/>
+
 
         </LinearLayout>
 
