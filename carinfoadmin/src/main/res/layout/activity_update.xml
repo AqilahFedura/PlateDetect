@@ -5,15 +5,103 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/vechupload"
+    android:background="@drawable/upload_bg"
     tools:context=".UpdateActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginTop="300dp"
         android:layout_gravity="center_horizontal"
-        android:padding="20dp">
+        android:orientation="vertical"
+        android:padding="20dp"
+        tools:layout_editor_absoluteX="0dp"
+        tools:layout_editor_absoluteY="261dp">
 
+        <EditText
+            android:id="@+id/referenceVehicleNumber"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:hint="Nama Pemilik"
+            android:padding="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <EditText
+            android:id="@+id/UpdateOwnerName"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:hint="Tipe Kendaraan"
+            android:padding="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <EditText
+            android:id="@+id/UpdateVehicleBrand"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:hint="Brand Kendaraan"
+            android:padding="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <EditText
+            android:id="@+id/UpdateVehicleRTO"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:hint="Nomor Kendaraan"
+            android:padding="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <EditText
+            android:id="@+id/UpdateVehicleArea"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="0dp"
+            android:layout_marginEnd="10dp"
+            android:gravity="start|center_vertical"
+            android:hint="Wilayah"
+            android:padding="16dp"
+            android:textColor="@color/dark_blue" />
+
+        <Button
+            android:id="@+id/UpdateButton"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="10dp"
+            android:text="Update"
+            android:textColor="@color/dark_blue"
+            android:textSize="18sp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="44dp"
+        android:gravity="center"
+        android:text="Update\nVehicle Number"
+        android:textColor="@android:color/darker_gray"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.502"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 </androidx.constraintlayout.widget.ConstraintLayout>
